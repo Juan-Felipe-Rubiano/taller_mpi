@@ -1,0 +1,6 @@
+bin/*
+!bin/.gitkeep
+resultados/*
+!resultados/.gitkeep
+figuras/*
+!figuras/.gitkeep
