@@ -36,12 +36,15 @@ struct timeval inicio, fin;
  * @param D la dimensión de ambas matrices cuadradas
  */
 void iniMatrix(double *mA, double *mB, int D){
-	/* settea la semilla de rand() para que sea pseudoaleatoria en función
+	/* Originalmente setteaba la semilla de rand() para que sea pseudoaleatoria en función
 	   del instante de tiempo. Normalmente lo recomendable es llamar esta función
 	   al inicio de main para que si se llama dos veces rápidamente no salga se 
-	   siembre la misma semilla
+	   siembre la misma semilla.
+
+	   Se modificó para que se puedan comparar los resultados entre ejecuciones
 	*/
-	srand(time(NULL)); 
+	//srand(time(NULL)); 
+	srand(123456789);
 	for(int i=0; i<D*D; i++, mA++, mB++){
 		//llena las matrices con valores una fórmula específica y hace uso de los número pseudoaleatorios
 		*mA = (0.1*i + 0.3*i) * (double) rand()/RAND_MAX*(5.1-2.3);
