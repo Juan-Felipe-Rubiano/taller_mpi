@@ -6,6 +6,7 @@
 # * 	Taller Evaluación de Rendimiento de Sistemas de Cómputo
 # *
 # * Autor: Ing. John Corredor Franco, PhD.
+# * Revision para taller: Juan Felipe Rubiano, Salomón Ávila, Sara Cárdenas, Cristian Ortiz, Juan C. 
 # * Fecha:
 # * Objetivo:
 # * Descripción: Lanza el binary juntos con los argumentos desde argumentos.txt

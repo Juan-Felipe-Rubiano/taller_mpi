@@ -2,6 +2,7 @@
 								=	Pontificia Universidad Javeriana	=
 
 	Author: John Corredor
+	Revision para taller: Juan Felipe Rubiano, Salomón Ávila, Sara Cárdenas, Cristian Ortiz, Juan C. 
 	Sept 2026
 
 	Descripción:

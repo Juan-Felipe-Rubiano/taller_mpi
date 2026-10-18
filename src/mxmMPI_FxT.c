@@ -2,6 +2,7 @@
 								=	Pontificia Universidad Javeriana	=
 
 	Author: John Corredor
+	Revision para taller: Juan Felipe Rubiano, Salomón Ávila, Sara Cárdenas, Cristian Ortiz, Juan C. 
 	Sept 2026
 
 	Descripción:
@@ -111,7 +112,7 @@ int main(int argc, char *argv[]) {
         
         free(tW_matA);										// Liberar reserva memoria tW_matA
         free(tW_matC);										// Liberar reserva memoria tW_matC
-        free(matrixT);										// Liberar reserva memoria matrixB 
+        free(matrixT);										// Liberar reserva memoria matrixT 
     }
 
 	ttf = MPI_Wtime();
@@ -122,7 +123,7 @@ int main(int argc, char *argv[]) {
         free(matrixB);
         free(matrixC);
         free(matrixT);
-		printf("Tiempo MPI = %10f\n", (ttf-tti));
+		printf("Tiempo por MPI = %10f\n", (ttf-tti));
     }
 
     MPI_Finalize();

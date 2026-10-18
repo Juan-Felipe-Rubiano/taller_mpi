@@ -2,6 +2,7 @@
 								=	Pontificia Universidad Javeriana	=
 
 	Author: John Corredor
+	Revision para taller: Juan Felipe Rubiano, Salomón Ávila, Sara Cárdenas, Cristian Ortiz, Juan C. 
 	Versión Prototipo "Inicial" MPI Distribución de Matrices en Nodos de Cómputo	
 
 	Descripción:
@@ -38,6 +39,12 @@ void mxmOmpFxC(double *mA, double *mB, double *mC, int tw, int D, int nH);
 
 //Función MxM: algoritmo FilasxFilas <Matrix Transpuesta> con OpenMP 
 void mxmOmpFxT(double *mA, double *mB, double *mC, int tw, int D, int nH);
+
+//Función MxM: algoritmo clásico con Pthread
+void mxmPthFxC(double *mA, double *mB, double *mC, int tw, int D, int nH);
+
+// Función MxM: algoritmo FilasxFilas <Matrix Transpuesta> con Pthread
+void mxmPthFxT(double *mA, double *mB, double *mC, int tw, int D, int nH);
 
 
 void iniTime();

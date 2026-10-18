@@ -2,6 +2,7 @@
 								=	Pontificia Universidad Javeriana	=
 
 	Author: John Corredor
+	Revision para taller: Juan Felipe Rubiano, Salomón Ávila, Sara Cárdenas, Cristian Ortiz, Juan C. 
 	Sept 2026
 
 	Descripción:
@@ -59,7 +60,7 @@ int main(int argc, char *argv[]) {
 		verificarDiv(cantWorkers, N);							// Verificador de dimensión Matrix % Workers == 0
         matrixA = (double *)malloc(N*N*sizeof(double));			// Reserva de memoria en Master: MatrixA
         matrixB = (double *)malloc(N*N*sizeof(double));			// Reserva de memoria en Master: MatrixB
-        matrixC = (double *)calloc(N*N,sizeof(double));			// Reserva de memoria en Master: MatrixC
+        matrixC = (double *)calloc(N*N,sizeof(double));			// Reserva de memoria en Master: MatrixC. Iniciado en 0 para la acumulación de sumas correcta.
 		iniMatrix(matrixA, matrixB, N);							// Inicialización MatrixA y MatrixB
 		impMatrix(matrixA, N);									//Impresión inicial MatrixA (N<13)
 		impMatrix(matrixB, N);									//Impresión inicial MatrixB (N<13)
@@ -118,7 +119,7 @@ int main(int argc, char *argv[]) {
         free(matrixA);
         free(matrixB);
         free(matrixC);
-		printf("Tiempo MPI = %10f\n", (ttf-tti));
+		printf("Tiempo por MPI = %10f\n", (ttf-tti));
     }
 
     MPI_Finalize();
