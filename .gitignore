@@ -4,3 +4,4 @@ resultados/*
 !resultados/.gitkeep
 figuras/*
 !figuras/.gitkeep
+*.o
