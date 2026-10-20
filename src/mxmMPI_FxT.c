@@ -39,7 +39,6 @@ int main(int argc, char *argv[]) {
 	//	1.- Revisión de Argumentos de Entrada del BINARIO
 	argumentos(argc);
 	int N  = (int) atoi(argv[1]); 								// Dimension of the matrices (N x N)
-	int nH = (int) atoi(argv[2]); 								// Cantidad Hilos (openMP, Posix, Fork())
     double *matrixA = NULL, *matrixB = NULL, *matrixC = NULL;	// Punteros a reservas para matrices
     double *matrixT = NULL;										// Puntero a reserva para matriz Transpuesta
 	int cantProcesos;											// Cantidad de Procesos/Tareas MPI

@@ -40,7 +40,6 @@
 int main(int argc, char *argv[]) {
 	//	1.- Revisión de Argumentos de Entrada del BINARIO
 	argumentos(argc);
-	char nomWorker[MPI_MAX_PROCESSOR_NAME];
 
 	int N  = (int) atoi(argv[1]); 								// Dimension of the matrices (N x N)
 	int nH = (int) atoi(argv[2]); 								// Cantidad Hilos (openMP, Posix, Fork())
