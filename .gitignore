@@ -5,3 +5,4 @@ resultados/*
 figuras/*
 !figuras/.gitkeep
 *.o
+!analisis/.gitkeep
