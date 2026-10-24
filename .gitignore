@@ -6,3 +6,4 @@ figuras/*
 !figuras/.gitkeep
 *.o
 !analisis/.gitkeep
+!tablas/.gitkeep

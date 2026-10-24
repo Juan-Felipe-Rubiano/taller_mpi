@@ -41,4 +41,8 @@ verificar: all
 clean:
 	$(RM) $(BIN)*
 
-.PHONY: all verificar clean
+entregar:
+	rm -f entrega_mpi.zip
+	zip entrega_mpi.zip $(SRC)*.c $(SRC)*.h Makefile lanzador.pl
+
+.PHONY: all verificar clean entregar
